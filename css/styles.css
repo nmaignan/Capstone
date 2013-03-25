@@ -14,9 +14,14 @@ body {
 }
 
 #wrapper:hover {
+<<<<<<< HEAD
 	/*-webkit-perspective-origin: 50% -100%;*/
 
 }
+=======
+	-webkit-perspective-origin: 50% -100%;
+}	
+>>>>>>> 89a8a733e5d7da8e02f86b4519b3135b2d753643
 
 @-webkit-keyframes spin {
 	from { -webkit-transform: rotateY(0); }
@@ -29,7 +34,11 @@ body {
 	height: 200px;
 	width: 200px;
 	-webkit-transform-style: preserve-3d;
+<<<<<<< HEAD
 	-webkit-animation: spin 40s infinite linear;
+=======
+	-webkit-animation: spin 8s infinite linear;
+>>>>>>> 89a8a733e5d7da8e02f86b4519b3135b2d753643
 }
 
 .plane {
@@ -42,11 +51,14 @@ body {
 	color: white;
 }
 
+<<<<<<< HEAD
 .thumbnail{
 	height: 80px;
 	width: 80px;
 }
 
+=======
+>>>>>>> 89a8a733e5d7da8e02f86b4519b3135b2d753643
 #shape > .p1 { -webkit-transform: translateZ(250px); }
 #shape > .p2 { -webkit-transform: rotateY(45deg) translateZ(250px); }
 #shape > .p3 { -webkit-transform: rotateY(90deg) translateZ(250px); }
@@ -57,6 +69,7 @@ body {
 #shape > .p8 { -webkit-transform: rotateY(315deg) translateZ(250px); }
 
 
+<<<<<<< HEAD
 #shape:hover > .p1 { -webkit-transform: translateZ(-1000px); }
 #shape:hover > .p2 { -webkit-transform: translateZ(-750px); }
 #shape:hover > .p3 { -webkit-transform: translateZ(-500px); }
@@ -73,6 +86,11 @@ article, aside, figure, footer, header, hgroup,
   ul li img { border: 2px solid white; cursor: pointer; }
   ul li img:hover { border: 2px solid black; }
   ul li img.hover { border: 2px solid black; }
+=======
+
+
+
+>>>>>>> 89a8a733e5d7da8e02f86b4519b3135b2d753643
 
 
 
