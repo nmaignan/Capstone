@@ -1,0 +1,98 @@
+body {
+	background: #eee;
+	font-family: arial, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	-webkit-perspective: 800;
+	width: 600px;
+	margin: 150px auto 0 auto;
+	-webkit-perspective-orgin: 50% 90px;
+	-webkit-transition: -webkit-perspective, 1s;
+}
+
+#wrapper:hover {
+	/*-webkit-perspective-origin: 50% -100%;*/
+
+}
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotateY(0); }
+	to { -webkit-transform: rotateY(-360deg); }
+}
+
+
+#shape {
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-animation: spin 40s infinite linear;
+}
+
+.plane {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	font-size: 10em;
+	color: white;
+}
+
+.thumbnail{
+	height: 80px;
+	width: 80px;
+}
+
+#shape > .p1 { -webkit-transform: translateZ(250px); }
+#shape > .p2 { -webkit-transform: rotateY(45deg) translateZ(250px); }
+#shape > .p3 { -webkit-transform: rotateY(90deg) translateZ(250px); }
+#shape > .p4 { -webkit-transform: rotateY(135deg) translateZ(250px); }
+#shape > .p5 { -webkit-transform: rotateY(180deg) translateZ(250px); }
+#shape > .p6 { -webkit-transform: rotateY(225deg) translateZ(250px); }
+#shape > .p7 { -webkit-transform: rotateY(270deg) translateZ(250px); }
+#shape > .p8 { -webkit-transform: rotateY(315deg) translateZ(250px); }
+
+
+#shape:hover > .p1 { -webkit-transform: translateZ(-1000px); }
+#shape:hover > .p2 { -webkit-transform: translateZ(-750px); }
+#shape:hover > .p3 { -webkit-transform: translateZ(-500px); }
+#shape:hover > .p4 { -webkit-transform: translateZ(-190px); }
+#shape:hover > .p5 { -webkit-transform: translateZ(190px); }
+#shape:hover > .p6 { -webkit-transform: translateZ(500px); }
+#shape:hover > .p7 { -webkit-transform: translateZ(750px); }
+#shape:hover > .p8 { -webkit-transform: translateZ(1000px); }
+
+article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+  ul { list-style: none; }
+  ul li { display: inline; } 
+  ul li img { border: 2px solid white; cursor: pointer; }
+  ul li img:hover { border: 2px solid black; }
+  ul li img.hover { border: 2px solid black; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

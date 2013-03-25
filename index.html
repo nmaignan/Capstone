@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="us-EN">
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">	$(function() {
+
+  $("img").click(function() {
+  	 var imgs = $("img.hover").length + 1;
+    if (imgs<9){
+    	$(this).toggleClass("hover");
+    	src=$(this).attr("src");
+    	$("#shape").append("<div class=\"plane p"+imgs+"\"><a href=\"http://nashvillesoftwareschool.com\"><img src=\""+src+"\"></a></div>")
+  } else{
+  	alert("can only select 8")
+  }
+  });
+
+  $("#btn").click(function() {
+    var imgs = $("img.hover").length;    
+    alert('there are ' + imgs + ' images selected');
+		
+	});
+
+});
+	</script>
+	</head>
+	<body>
+		<div id="selector">
+		<a href="#" id="btn">What images are selected?</a>
+			  <ul>
+			    <li><img class=thumbnail src="images/Clinton.jpg" /></li>
+			    <li><img class=thumbnail src="images/Bush.jpg" /></li>
+			    <li><img class=thumbnail src="images/emilehirsch.jpg" /></li>
+			    <li><img class=thumbnail src="images/ltcolstone.jpg" /></li>
+			    <li><img class=thumbnail src="images/seanpenn.jpg" /></li>
+			    <li><img class=thumbnail src="images/softeamgroup.jpg" /></li>
+			    <li><img class=thumbnail src="images/softeamjtfh.jpg" /></li>
+			    <li><img class=thumbnail src="images/bondgirlshirleyeaton.jpg" /></li>
+			    <li><img class=thumbnail src="images/ltcolstone.jpg" /></li>
+			    <li><img class=thumbnail src="images/ltcolstone.jpg" /></li>
+			    <li><img class=thumbnail src="images/120px-GitHub.svg_.png" /></li>
+			    <li><img class=thumbnail src="images/css3-logo.png" /></li>
+			    <li><img class=thumbnail src="images/html5-logo.png" /></li>
+			    <li><img class=thumbnail src="images/JavaScript-logo.png" /></li>
+			    <li><img class=thumbnail src="images/jQuery_logo_color_ondark-e1336274765132.png" /></li>
+			    <li><img class=thumbnail src="images/php-med-trans.png" /></li>
+			    <li><img class=thumbnail src="images/Ruby_on_Rails-logo-150x150.png" /></li>
+			    <li><img class=thumbnail src="images/wpblue-l.png" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			    <li><img src="http://placehold.it/80x80" /></li>
+			  </ul>
+			 </div>
+
+		<div id="wrapper">
+			<div id="shape">
+				<!-- <div class="plane p1"><a href="http://google.com"><img src="images/bondgirlshirleyeaton.jpg"></a></div> --><!-- this closes the .p1 div -->
+				<!-- <div class="plane p2"><img src="images/Bush.jpg"></div> --> <!-- this closes the .p2 div -->
+				<!-- <div class="plane p3"><img src="images/Clinton.jpg"></div> --> <!-- this closes the .p3 div -->
+				<!-- <div class="plane p4"><img src="images/emilehirsch.jpg"></div> --> <!-- this closes the .p4 div -->
+				<!-- <div class="plane p5"><img src="images/ltcolstone.jpg"></div> --> <!-- this closes the .p5 div -->
+				<!-- <div class="plane p6"><img src="images/seanpenn.jpg"></div> --> <!-- this closes the .p6 div -->
+				<!-- <div class="plane p7"><img src="images/softeamgroup.jpg"></div> --> <!-- this closes the .p7 div -->
+				<!-- <div class="plane p8"><img src="images/softeamjtfh.jpg"></div> --> <!-- this closes the .p8 div -->
+				<!-- <div class="plane p9"><img src="images/softeamjtfh.jpg"></div>
+				<div class="plane p10"><img src="images/softeamjtfh.jpg"></div>
+				<div class="plane p11"><img src="images/softeamjtfh.jpg"></div>
+				<div class="plane p12"><img src="images/softeamjtfh.jpg"></div>
+				<div class="plane p13"><img src="images/softeamjtfh.jpg"></div>
+				<div class="plane p14"><img src="images/softeamjtfh.jpg"></div>
+				<div class="plane p15"><img src="images/softeamjtfh.jpg"></div> -->
+			</div><!-- this closes the #shape div -->
+		</div><!-- this closes the #wrapper div -->
+	</body>
+</html>
